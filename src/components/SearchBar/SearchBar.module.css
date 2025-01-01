@@ -1,0 +1,52 @@
+.searchBar {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.searchInputWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px 100px;
+    /* Додаткове місце для кнопки */
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+    border-color: #007bff;
+}
+
+.searchButton {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #aaa;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.searchButton:hover {
+    color: #007bff;
+}

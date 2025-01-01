@@ -1,0 +1,40 @@
+.loadMore {
+    display: block;
+    /* Центрування через margin */
+    margin: 20px auto;
+    /* Встановлення відступів зверху і знизу */
+    padding: 10px 20px;
+    /* Розмір кнопки */
+    background-color: #007bff;
+    /* Синій фон */
+    color: white;
+    /* Білий текст */
+    border: none;
+    /* Прибрані межі */
+    border-radius: 5px;
+    /* Закруглені кути */
+    font-size: 16px;
+    /* Розмір тексту */
+    font-weight: bold;
+    /* Жирний текст */
+    cursor: pointer;
+    /* Курсор для кнопки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Легка тінь */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Плавний ефект при наведенні */
+}
+
+.loadMore:hover {
+    background-color: #0056b3;
+    /* Темніший синій фон при наведенні */
+    transform: scale(1.05);
+    /* Легке збільшення кнопки */
+}
+
+.loadMore:active {
+    transform: scale(1);
+    /* Повернення до початкового розміру при натисканні */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Зменшення тіні */
+}
