@@ -7,6 +7,7 @@ import Loader from './components/Loader/Loader';
 import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
 import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import ImageModal from './components/ImageModal/ImageModal';
+import { ToastContainer } from 'react-toastify';
 import styles from './App.module.css';
 
 const API_KEY = 'jrUby21cxyE-mfVlRJdgpMIIJGqQcWM6mATZJTRQ5T4';
@@ -64,6 +65,7 @@ const App = () => {
   return (
     <div className={styles.app}>
       <Toaster />
+       <ToastContainer />
       <SearchBar onSubmit={handleSearch} />
       {error && <ErrorMessage message={error} />}
       <ImageGallery images={images} onImageClick={openModal} />
